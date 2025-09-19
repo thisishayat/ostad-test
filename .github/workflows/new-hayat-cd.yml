@@ -1,4 +1,4 @@
-name: Print Hello File
+name: Print Hayat Hello File
 
 on:
   push:
@@ -6,16 +6,15 @@ on:
       - main
 
 jobs:
-  read-hello:
+  read-hello-file-hayat:
     runs-on: ubuntu-latest
-
+#  checkout the repository's code
     steps:
-      # Step 1: Checkout repository
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@main
 
-      # Step 2: Read and print hello.txt
+# tep to read the hello.txt file and print its content to the workflow's log.
       - name: Read hello.txt
         run: |
-          echo "Contents of hello.txt:"
+          echo "Read and Output"
           cat hello.txt
