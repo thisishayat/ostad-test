@@ -10,11 +10,11 @@ jobs:
     runs-on: ubuntu-latest
 #  checkout the repository's code
     steps:
-      - name: Checkout repository
+      - name: Checkout ostad hayat assignement repo main
         uses: actions/checkout@main
 
 # tep to read the hello.txt file and print its content to the workflow's log.
-      - name: Read hello.txt
+      - name: Read Hayat ostad assignment hello.txt file
         run: |
-          echo "Read and Output"
+          echo "Read and Output ostad hayat file"
           cat hello.txt
