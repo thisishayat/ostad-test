@@ -18,3 +18,4 @@ jobs:
         run: |
           echo "Read and Output ostad hayat file"
           cat hello.txt
+          cat index.html
